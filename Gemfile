@@ -12,7 +12,7 @@ group :development, :test do
   gem 'simplecov', :require => false
   gem 'sqlite3'
   gem 'ruby-debug19', :require => 'ruby-debug'
-  gem 'rspec-rails', '~> 2.9.0'
+  gem 'rspec-rails'
   gem 'ZenTest'
   gem 'cucumber-rails'
   gem 'cucumber-rails-training-wheels'
@@ -20,6 +20,7 @@ group :development, :test do
   gem 'capybara'
   gem 'launchy'
   gem 'factory_girl_rails', '1.6.0' 
+  gem 'multi_json'
 end
 group :production do
 #  gem 'pg'
