@@ -9,20 +9,20 @@ gem 'ruby-tmdb'
 
 # for Heroku deployment - as described in Ap. A of ELLS book
 group :development, :test do
-  gem 'simplecov', :require => false
+  gem 'ZenTest'
+  gem 'factory_girl_rails'
   gem 'sqlite3'
   gem 'ruby-debug19', :require => 'ruby-debug'
-  gem 'rspec-rails', '~> 2.9.0'
-  gem 'ZenTest'
   gem 'cucumber-rails'
   gem 'cucumber-rails-training-wheels'
   gem 'database_cleaner'
   gem 'capybara'
   gem 'launchy'
-  gem 'factory_girl_rails', '1.6.0' 
+  gem 'rspec-rails'
+  gem 'simplecov', :require => false
 end
 group :production do
-#  gem 'pg'
+  gem 'pg'
 end
 
 # Gems used only for assets and not required
