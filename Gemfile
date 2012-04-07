@@ -2,11 +2,15 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.1.0'
 
+gem 'ruby-tmdb'
+
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 # for Heroku deployment - as described in Ap. A of ELLS book
 group :development, :test do
+  gem 'ZenTest'
+  gem 'factory_girl_rails', '1.6.0'
   gem 'sqlite3'
   gem 'ruby-debug19', :require => 'ruby-debug'
   gem 'cucumber-rails'
@@ -15,7 +19,7 @@ group :development, :test do
   gem 'capybara'
   gem 'launchy'
   gem 'rspec-rails'
-  gem 'simplecov'
+  gem 'simplecov', :require => false
 end
 group :production do
   gem 'pg'
