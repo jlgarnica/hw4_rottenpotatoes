@@ -23,7 +23,8 @@ module NavigationHelpers
     when /^the Create New Movie page$/
       '/movies/new'
 
-
+    when /^the details page for "(.+)"$/
+      movies_path $1
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #
